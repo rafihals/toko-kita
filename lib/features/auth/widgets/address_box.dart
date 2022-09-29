@@ -11,8 +11,8 @@ class AddressBox extends StatelessWidget {
           height: 40,
           decoration: const BoxDecoration(
             gradient: LinearGradient(colors: [
-              Color.fromARGB(255, 114, 226, 221),
-              Color.fromARGB(255, 163, 236, 233)
+              Color(0xFF9B99DE),
+              Color(0xFF9B99DE)
             ], stops: [
               0.5,
               1.0
@@ -24,13 +24,12 @@ class AddressBox extends StatelessWidget {
               Icon(
                 Icons.location_on_outlined,
                 size: 25,
+                color: Color(0xFFFFFFFF),
               ),
               Expanded(
                 child: Padding(
                   padding: EdgeInsets.only(left: 5),
-                  child: Text(
-                    'Send to',
-                    style: const TextStyle(fontWeight: FontWeight.w500),
+                  child: Text('Send to', style: TextStyle(color: Color(0xFFFFFFFF),fontSize: 15,fontWeight: FontWeight.w500),
                   ),
                 ),
               )
