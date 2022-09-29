@@ -16,6 +16,18 @@ class Background extends StatelessWidget {
     return Scaffold(
       resizeToAvoidBottomInset: false,
       body: Container(
+        decoration: const BoxDecoration(
+            gradient: LinearGradient(
+                begin: Alignment(-1.0, -1),
+                end: Alignment(-1.0, 1),
+                colors: [
+              Color.fromARGB(255, 133, 131, 215),
+              Color.fromARGB(255, 206, 205, 239)
+            ],
+                stops: [
+              0.5,
+              1.0
+            ])),
         width: double.infinity,
         height: MediaQuery.of(context).size.height,
         child: Stack(
@@ -26,7 +38,7 @@ class Background extends StatelessWidget {
               left: 0,
               child: Image.asset(
                 topImage,
-                width: 120,
+                width: 0,
               ),
             ),
             // Positioned(
