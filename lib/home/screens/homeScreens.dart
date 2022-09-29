@@ -26,7 +26,7 @@ class _HomeScreenState extends State<HomeScreen> {
             children: [
               Expanded(
                 child: Container(
-                    height: 42,
+                    height: 30,
                     margin: const EdgeInsets.only(left: 15),
                     child: Material(
                       borderRadius: BorderRadius.circular(20),
@@ -39,7 +39,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                 padding: EdgeInsets.only(right: 11),
                                 child: Icon(
                                   Icons.search,
-                                  color: Colors.black,
+                                  color: Color(0xFF8381D6),
                                   size: 23,
                                 ),
                               ),
@@ -55,11 +55,12 @@ class _HomeScreenState extends State<HomeScreen> {
                                 borderRadius:
                                     BorderRadius.all(Radius.circular(7)),
                                 borderSide: BorderSide(
-                                    color: Colors.black38, width: 1)),
+                                    color: Color(0xFFFFFFFF), width: 1)),
                             hintText: 'What do you looking for?',
                             hintStyle: const TextStyle(
                               fontWeight: FontWeight.w500,
                               fontSize: 17,
+                              color: Color(0xFF8381D6),
                             )),
                       ),
                     )),
@@ -73,18 +74,18 @@ class _HomeScreenState extends State<HomeScreen> {
                   children: const [
                     Icon(
                       Icons.store_mall_directory,
-                      color: Colors.black,
+                      color: Color(0xFFFFFFFF),
                       size: 25,
                     ),
                     Icon(
                       Icons.shopping_cart,
                       size: 25,
-                      color: Colors.black,
+                      color: Color(0xFFFFFFFF),
                     ),
                     Icon(
                       Icons.notifications,
                       size: 25,
-                      color: Colors.black,
+                      color: Color(0xFFFFFFFF),
                     ),
                     
                   ],
