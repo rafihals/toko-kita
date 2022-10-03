@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:toko_kita/home/screens/homeScreens.dart';
 
 import 'already_have_an_account_acheck.dart';
 import '../../../constants.dart';
@@ -59,7 +60,16 @@ class SignUpForm extends StatelessWidget {
           ),
           const SizedBox(height: defaultPadding / 2),
           ElevatedButton(
-            onPressed: () {},
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) {
+                    return HomeScreen();
+                  },
+                ),
+              );
+            },
             child: Text("Sign Up".toUpperCase()),
           ),
           const SizedBox(height: defaultPadding),

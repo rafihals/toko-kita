@@ -12,13 +12,13 @@ class SignUpScreenTopImage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        SizedBox(height: defaultPadding),
+        SizedBox(height: defaultPadding * 2),
         Row(
           children: [
             const Spacer(),
             Expanded(
               flex: 8,
-              child: SvgPicture.asset("assets/icons/signup.svg"),
+              child: SvgPicture.asset("assets/icons/tokoloak.svg"),
             ),
             const Spacer(),
           ],
